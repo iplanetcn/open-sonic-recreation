@@ -7,3 +7,4 @@ tools
 bin/*.dll
 bin/*.exe
 .vscode
+cmake-build-debug
