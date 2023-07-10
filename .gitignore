@@ -9,3 +9,4 @@ bin/*.exe
 .vscode
 cmake-build-debug
 bin/
+.DS_Store
