@@ -8,3 +8,4 @@ bin/*.dll
 bin/*.exe
 .vscode
 cmake-build-debug
+bin/

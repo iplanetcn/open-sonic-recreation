@@ -16,16 +16,16 @@ void Level::create(std::string fZone, std::string fAct, int act) {
 	tiles16 = nullptr;
 	tilesBig = nullptr;
 
-	loadTerrainTiles("content/levels/collide/Collision Array (Normal).bin",
-					 "content/levels/collide/Collision Array (Rotated).bin",
-					 "content/levels/collide/Angle Map.bin");
+	loadTerrainTiles("assets/levels/collide/Collision Array (Normal).bin",
+					 "assets/levels/collide/Collision Array (Rotated).bin",
+					 "assets/levels/collide/Angle Map.bin");
 
-	std::string sTex       = "content/levels/textures/"  + sZone + ".png";
-	std::string sCollide   = "content/levels/collide/"   + sZone + ".bin";
-	std::string sMap256    = "content/levels/map256/"    + sZone + ".bin";
-	std::string sLayout    = "content/levels/layout/"    + sAct  + ".bin";
-	std::string sStartPos  = "content/levels/startpos/"  + sAct  + ".bin";
-	std::string sObjPos    = "content/levels/objpos/" 	 + sAct  + ".bin";
+	std::string sTex       = "assets/levels/textures/"  + sZone + ".png";
+	std::string sCollide   = "assets/levels/collide/"   + sZone + ".bin";
+	std::string sMap256    = "assets/levels/map256/"    + sZone + ".bin";
+	std::string sLayout    = "assets/levels/layout/"    + sAct  + ".bin";
+	std::string sStartPos  = "assets/levels/startpos/"  + sAct  + ".bin";
+	std::string sObjPos    = "assets/levels/objpos/" 	 + sAct  + ".bin";
 
 	scr.loadTextureFromFile(sTex.c_str(), 255);
 

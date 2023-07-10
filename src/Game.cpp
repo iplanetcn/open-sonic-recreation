@@ -2,7 +2,7 @@
 
 #include "Geometry.h"
 
-#include <SFML\Graphics.hpp>
+#include <SFML/Graphics.hpp>
 #include <iostream>
 
 #define TEX_OBJECTS 0
@@ -20,9 +20,9 @@ void Game::init() {
 
     std::cout << "Loading textures..." << std::endl;
 
-    scr.loadTextureFromFile("content/textures/texGhzObj.png", TEX_GHZ_GIMM, framesGhzGim, 8);
-    scr.loadTextureFromFile("content/textures/texObj.png", TEX_OBJECTS, framesObjects, 139);
-    scr.loadTextureFromFile("content/textures/texHud.png", TEX_HUD);
+    scr.loadTextureFromFile("assets/textures/texGhzObj.png", TEX_GHZ_GIMM, framesGhzGim, 8);
+    scr.loadTextureFromFile("assets/textures/texObj.png", TEX_OBJECTS, framesObjects, 139);
+    scr.loadTextureFromFile("assets/textures/texHud.png", TEX_HUD);
 
     scr.addFont(0, "abcdefghijklmnopqrstuvwxyz1234567890*.:-=!?<>", 1, TEX_HUD, IntRect(2, 150, 8, 7));
     scr.addFont(1, "abcdefghijklmnopqrstuvwxyz1234567890$.-=>", 1, TEX_HUD, IntRect(1, 35, 8, 7), 1);
@@ -49,9 +49,9 @@ void Game::init() {
     audio.loadSound(SND_PATH SND_END_TABLE_FILE, SND_END_TABLE);
     audio.loadSound(SND_PATH SND_PLT_CRUSH_FILE, SND_PLT_CRUSH);
 
-    audio.addMusic(0, "content/music/Title.ogg");
-    audio.addMusic(1, "content/music/StageClear.ogg");
-    audio.addMusic(2, "content/music/GHZ.ogg");
+    audio.addMusic(0, "assets/music/Title.ogg");
+    audio.addMusic(1, "assets/music/StageClear.ogg");
+    audio.addMusic(2, "assets/music/GHZ.ogg");
 
     audio.playMusic(0);
     ts = new TitleScreen(scr);

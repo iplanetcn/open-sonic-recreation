@@ -1,6 +1,6 @@
 #pragma once
 
-#define SND_PATH "content/sounds/"
+#define SND_PATH "assets/sounds/"
 
 #define SND_JUMP 0xA0
 #define SND_JUMP_FILE "S1_A0.wav"

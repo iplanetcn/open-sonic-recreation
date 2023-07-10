@@ -18,8 +18,8 @@ const Frame framesTitleSonic[] = {
 class TitleScreen {
     public:
         TitleScreen(Screen& scr) : scr(scr), cam(scr)  {
-            scr.loadTextureFromFile("content/textures/texTitle.png", 254, framesTitleSonic, 8);
-            scr.loadTextureFromFile("content/textures/texTitleBg.png", 253);
+            scr.loadTextureFromFile("assets/textures/texTitle.png", 254, framesTitleSonic, 8);
+            scr.loadTextureFromFile("assets/textures/texTitleBg.png", 253);
 
             cam.create(Vector2f(0, 0), scr.getSize());
 
